@@ -1,0 +1,99 @@
+[0.010s] Invoking command in '/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/a-tamby/experiment_grinding_nose/sensors_experiment/src/ros2_net_ft_driver/net_ft_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver
+[0.054s] -- The C compiler identification is GNU 11.4.0
+[0.095s] -- The CXX compiler identification is GNU 11.4.0
+[0.100s] -- Detecting C compiler ABI info
+[0.144s] -- Detecting C compiler ABI info - done
+[0.149s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.149s] -- Detecting C compile features
+[0.149s] -- Detecting C compile features - done
+[0.151s] -- Detecting CXX compiler ABI info
+[0.204s] -- Detecting CXX compiler ABI info - done
+[0.210s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.210s] -- Detecting CXX compile features
+[0.210s] -- Detecting CXX compile features - done
+[0.211s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.310s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.352s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.374s] -- Found asio_cmake_module: 1.2.0 (/opt/ros/humble/share/asio_cmake_module/cmake)
+[0.375s] -- Found tinyxml2_vendor: 0.7.6 (/opt/ros/humble/share/tinyxml2_vendor/cmake)
+[0.377s] -- Found ASIO: /usr/include  
+[0.380s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.381s] -- Checking for module 'curlpp'
+[0.389s] --   Found curlpp, version 0.8.1
+[0.412s] -- Found hardware_interface: 2.48.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.434s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.437s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.441s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.448s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.457s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.579s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.580s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.594s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.632s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.635s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.644s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.646s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.652s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.660s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.665s] -- Looking for pthread.h
+[0.713s] -- Looking for pthread.h - found
+[0.713s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.759s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.760s] -- Found Threads: TRUE  
+[0.788s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.792s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.837s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.837s] -- Configured cppcheck include dirs: /home/a-tamby/experiment_grinding_nose/sensors_experiment/src/ros2_net_ft_driver/net_ft_driver/include
+[0.838s] -- Configured cppcheck exclude dirs and/or files: 
+[0.838s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.838s] -- Added test 'lint_cmake' to check CMake code style
+[0.838s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.838s] -- Added test 'xmllint' to check XML markup files
+[0.840s] -- Configuring done
+[0.861s] -- Generating done
+[0.864s] -- Build files have been written to: /home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver
+[0.870s] Invoked command in '/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/a-tamby/experiment_grinding_nose/sensors_experiment/src/ros2_net_ft_driver/net_ft_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver
+[0.872s] Invoking command in '/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver -- -j20 -l20
+[0.907s] [ 33%] [32mBuilding CXX object CMakeFiles/net_ft_driver.dir/src/interfaces/onrobot_ft_interface.cpp.o[0m
+[0.907s] [ 33%] [32mBuilding CXX object CMakeFiles/net_ft_driver.dir/src/interfaces/ati_axia_ft_interface.cpp.o[0m
+[0.907s] [ 50%] [32mBuilding CXX object CMakeFiles/net_ft_driver.dir/src/interfaces/ati_ft_interface.cpp.o[0m
+[0.908s] [ 66%] [32mBuilding CXX object CMakeFiles/net_ft_driver.dir/src/hardware_interface.cpp.o[0m
+[0.908s] [ 83%] [32mBuilding CXX object CMakeFiles/net_ft_driver.dir/src/interfaces/net_ft_interface.cpp.o[0m
+[3.425s] [100%] [32m[1mLinking CXX shared library libnet_ft_driver.so[0m
+[3.579s] [100%] Built target net_ft_driver
+[3.589s] Invoked command in '/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver -- -j20 -l20
+[3.590s] Invoking command in '/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver
+[3.596s] -- Install configuration: ""
+[3.596s] -- Execute custom install script
+[3.596s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver//hardware_interface_plugin.xml
+[3.603s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/lib/libnet_ft_driver.so
+[3.610s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/include/net_ft_driver/hardware_interface.hpp
+[3.617s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/include/net_ft_driver/interfaces/ati_axia_ft_interface.hpp
+[3.623s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/include/net_ft_driver/interfaces/ati_ft_interface.hpp
+[3.629s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/include/net_ft_driver/interfaces/net_ft_interface.hpp
+[3.635s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/include/net_ft_driver/interfaces/onrobot_ft_interface.hpp
+[3.640s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/include/net_ft_driver/visibility_control.h
+[3.647s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/config/net_ft_broadcaster.yaml
+[3.652s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/launch/net_ft_broadcaster.launch.py
+[3.658s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/environment/library_path.sh
+[3.664s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/environment/library_path.dsv
+[3.671s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/ament_index/resource_index/package_run_dependencies/net_ft_driver
+[3.678s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/ament_index/resource_index/parent_prefix_path/net_ft_driver
+[3.684s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/environment/ament_prefix_path.sh
+[3.690s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/environment/ament_prefix_path.dsv
+[3.695s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/environment/path.sh
+[3.700s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/environment/path.dsv
+[3.705s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/local_setup.bash
+[3.712s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/local_setup.sh
+[3.719s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/local_setup.zsh
+[3.724s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/local_setup.dsv
+[3.730s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/package.dsv
+[3.737s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/ament_index/resource_index/packages/net_ft_driver
+[3.742s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/net_ft_driver
+[3.747s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.753s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[3.758s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.763s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/cmake/net_ft_driverConfig.cmake
+[3.767s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/cmake/net_ft_driverConfig-version.cmake
+[3.772s] -- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/net_ft_driver/share/net_ft_driver/package.xml
+[3.779s] Invoked command in '/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/a-tamby/experiment_grinding_nose/sensors_experiment/build/net_ft_driver

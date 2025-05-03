@@ -1,0 +1,65 @@
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kstd::string Aurora::toolDataToCSV(const ToolData&)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:264:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<MarkerData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  264 |         for (int i = 0; [01;35m[Ki < toolData.markers.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::writeCSV(std::string, int, std::vector<ToolData>&)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:307:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  307 |             for (int t = 0; [01;35m[Kt < enabledTools.size()[m[K; t++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:309:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  309 |                 for (int j = 0; [01;35m[Kj < newToolData.size()[m[K; j++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:328:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  328 |                 for (int t = 0; [01;35m[Kt < enabledTools.size()[m[K; t++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:337:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  337 |                 if ([01;35m[KnewDataCount < enabledTools.size()[m[K)
+      |                     [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:344:41:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  344 |                 if ([01;35m[KpreviousFrameNumber == enabledTools[0].frameNumber[m[K)
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:359:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  359 |                 for (int t = 0; [01;35m[Kt < enabledTools.size()[m[K; t++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:362:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<MarkerData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  362 |                     for (int m = 0; [01;35m[Km < enabledTools[t].markers.size()[m[K; m++)
+      |                                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:372:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  372 |             for (int t = 0; [01;35m[Kt < enabledTools.size()[m[K; t++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::printToolData(const ToolData&)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:391:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<SystemAlert>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  391 |             for (int a = 0; [01;35m[Ka < toolData.systemAlerts.size()[m[K; a++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:400:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  400 |             for (int b = 0; [01;35m[Kb < toolData.buttons.size()[m[K; b++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::printTrackingData()[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:431:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  431 |             for (int i = 0; [01;35m[Ki < toolData.size()[m[K; i++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::initializeAndEnableTools(std::vector<ToolData>&)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:448:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<PortHandleInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  448 |         for (int i = 0; [01;35m[Ki < portHandles.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:456:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<PortHandleInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  456 |         for (int i = 0; [01;35m[Ki < portHandles.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:462:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<PortHandleInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  462 |         for (int i = 0; [01;35m[Ki < portHandles.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::configureActiveTools(std::string)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:502:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<PortHandleInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  502 |         for (int i = 0; [01;35m[Ki < portHandles.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K At global scope:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:43:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KuseUDP[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   43 | static bool [01;35m[KuseUDP[m[K = false;
+      |             [01;35m[K^~~~~~[m[K
+In file included from [01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:33[m[K:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/aurora_api/library/include/CombinedApi.h:426:20:[m[K [01;35m[Kwarning: [m[K‘[01m[KerrorStrings[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  426 | static const char* [01;35m[KerrorStrings[m[K[] =
+      |                    [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/aurora_api/library/include/CombinedApi.h:415:20:[m[K [01;35m[Kwarning: [m[K‘[01m[KwarningStrings[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  415 | static const char* [01;35m[KwarningStrings[m[K[] =
+      |                    [01;35m[K^~~~~~~~~~~~~~[m[K

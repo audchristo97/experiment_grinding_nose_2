@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        li {
+            margin-bottom: 5px;
+            /* Adjust the spacing as needed */
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            background: #535455;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>NDI Aurora ROS 2 package</h1>
+        <p>This ROS 2 package will connect the Aurora NDI system to the ROS2 network and will publish the orientation
+            (in quaternions) and position (in mm) data for later data manipulation.
+            This README file will guide you in installing this package on your system. This package will only work on a
+            <b>Ubuntu 22.04</b> machine and if you have installed <b>ROS 2 Humble</b>
+            in your system.</p> It will be advised to go through the <a href="https://docs.ros.org/en/humble/Tutorials.html">ROS 2 Humble tutorials</a> before continuing.
+        <h2>Installation</h2>
+        <p>To install this project, follow these steps:</p>
+        <ol>
+            <li> Download the <code>sensors_experiment</code> folder from Microsoft Teams</li>
+            <li> Unzip the downloaded folder and place the <code>sensors_experiment</code> folder into your system's
+                <code>home</code> directory.
+                Once downloaded, the <code>sensors_experiment</code> folder should have the following directory
+                structure:
+                <img src="html_src/project_structure.png" alt="NDI Aurora ROS 2 project directory struture"
+                    style="width:405px;height:259px;">
+            </li>
+            <li> Before compiling your ROS 2 node, it is important to compile the NDI Aurora API functions located in the <code>aurora_api</code> folder as the ROS 2 package depends on these functions to connect
+            the Aurora system to the network and retrieve data. To do that, follow these steps:
+                <ol>
+                    <li> Access the <code>aurora_api</code> folder by writting the following command in a new terminal:
+                        <pre id="code-block-1"><button onClick="copyCode('code-block-1')">Copy Code</button><code>cd sensors_experiment/aurora_api</code></pre>
+                    </li>
+                    <li> Clean the API with <code>make clean</code>
+                        <pre id="code-block-2"><button onClick="copyCode('code-block-2')">Copy Code</button><code>make clean</code></pre>
+                    </li>
+                    <li> Compile the API with <code>make</code>
+                        <pre id="code-block-3"><button onClick="copyCode('code-block-3')">Copy Code</button><code>make</code></pre>
+                    </li>
+                    <li>Once the NDI Aurora API is built, go back to the root file of your project
+                        <pre id="code-block-4"><button onClick="copyCode('code-block-4')">Copy Code</button><code>cd ..</code></pre>
+                    </li>
+                </ol>
+        </li>
+        <li>Build the ROS 2 package by running the <code>rebuild_ws.sh</code> file in the same terminal.
+            <pre id="code-block-5"><button onClick="copyCode('code-block-5')">Copy Code</button><code>./rebuild_ws.sh</code></pre>
+            
+            If the terminal returns the error: <code>bash: ./rebuild_ws.sh: Permission denied</code>, you will need to make the <code>rebuild_ws.sh</code> script executable on your system before 
+            running the previous command. For that, write the following command in the terminal:
+            <pre id="code-block-6"><button onClick="copyCode('code-block-6')">Copy Code</button><code>chmod +x rebuild_ws.sh</code></pre>
+        </li>
+        <li>
+            If you do not see any errors, the NDI Aurora ROS 2 node was successfully installed on your system.
+        </li>
+        </ol>
+        <h2>Usage</h2>
+        <p> To run the NDI Aurora ROS 2 node, please follow these steps:
+            <ol>
+                <li>In a new terminal, source your ROS 2 workspace setup files:
+                    <pre id="code-block-7"><button onClick="copyCode('code-block-7')">Copy Code</button><code>cd sensors_experiment/</code></pre>
+                    <pre id="code-block-8"><button onClick="copyCode('code-block-8')">Copy Code</button><code>source install/setup.bash</code></pre>
+                </li>
+                <li> Run the NDI Aurora ROS 2 node:
+                    <pre id="code-block-9"><button onClick="copyCode('code-block-9')">Copy Code</button><code>ros2 run aurora_ndi_pkg aurora_talker</code></pre> 
+                </li>
+            </ol>
+
+            If you want to see the orientation (in quaternion) and position (in mm) data retrieved from the sensor, please follow these steps:
+            <ol>
+                <li>In a new terminal, source your ROS 2 workspace setup files:
+                    <pre id="code-block-10"><button onClick="copyCode('code-block-10')">Copy Code</button><code>cd sensors_experiment/</code></pre>
+                    <pre id="code-block-11"><button onClick="copyCode('code-block-11')">Copy Code</button><code>source install/setup.bash</code></pre>
+                   
+                </li>
+                <li>The sensor data is published on the ROS 2 network using the <code>/aurora_transform</code> topic. To visualise its content, write the 
+                following command:
+                    <pre id="code-block-12"><button onClick="copyCode('code-block-12')">Copy Code</button><code>ros2 topic echo /aurora_transform</code></pre>
+                </li>
+            </ol>
+        </p>
+        <!-- <h2>Contributing</h2>
+        <p>Feel free to contribute by submitting a pull request.</p> -->
+    </div>
+
+    <script>
+        function copyCode(codeBlockId) {
+            // Get the text inside the <code> block based on the passed ID
+            const codeText = document.querySelector(`#${codeBlockId} code`).innerText;
+            
+            // Copy the text to clipboard
+            navigator.clipboard.writeText(codeText).then(() => {
+                alert(`Code from ${codeBlockId} copied to clipboard!`);
+            }).catch(err => {
+                console.error("Failed to copy:", err);
+            });
+        }
+    </script>
+    
+</body>
+
+</html>

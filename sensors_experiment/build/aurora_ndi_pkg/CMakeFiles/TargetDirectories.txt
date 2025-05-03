@@ -1,0 +1,10 @@
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/uninstall.dir
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/aurora_ndi_pkg_uninstall.dir
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/aurora_talker.dir
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/test.dir
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/edit_cache.dir
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/rebuild_cache.dir
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/list_install_components.dir
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/install.dir
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/install/local.dir
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/CMakeFiles/install/strip.dir

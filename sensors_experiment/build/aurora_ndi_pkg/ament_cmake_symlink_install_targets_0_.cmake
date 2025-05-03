@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/aurora_talker" "TARGETS" "aurora_talker" "DESTINATION" "lib/aurora_ndi_pkg")

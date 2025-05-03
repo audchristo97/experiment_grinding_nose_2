@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+990d3ef7be9a31165668408365b36241 CMakeFiles/aurora_ndi_pkg_uninstall

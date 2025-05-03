@@ -1,0 +1,136 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg
+[ 50%] [32mBuilding CXX object CMakeFiles/aurora_talker.dir/src/aurora_node.cpp.o[0m
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kstd::string Aurora::toolDataToCSV(const ToolData&)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:264:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<MarkerData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  264 |         for (int i = 0; [01;35m[Ki < toolData.markers.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::writeCSV(std::string, int, std::vector<ToolData>&)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:307:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  307 |             for (int t = 0; [01;35m[Kt < enabledTools.size()[m[K; t++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:309:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  309 |                 for (int j = 0; [01;35m[Kj < newToolData.size()[m[K; j++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:328:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  328 |                 for (int t = 0; [01;35m[Kt < enabledTools.size()[m[K; t++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:337:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  337 |                 if ([01;35m[KnewDataCount < enabledTools.size()[m[K)
+      |                     [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:344:41:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  344 |                 if ([01;35m[KpreviousFrameNumber == enabledTools[0].frameNumber[m[K)
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:359:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  359 |                 for (int t = 0; [01;35m[Kt < enabledTools.size()[m[K; t++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:362:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<MarkerData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  362 |                     for (int m = 0; [01;35m[Km < enabledTools[t].markers.size()[m[K; m++)
+      |                                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:372:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  372 |             for (int t = 0; [01;35m[Kt < enabledTools.size()[m[K; t++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::printToolData(const ToolData&)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:391:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<SystemAlert>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  391 |             for (int a = 0; [01;35m[Ka < toolData.systemAlerts.size()[m[K; a++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:400:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  400 |             for (int b = 0; [01;35m[Kb < toolData.buttons.size()[m[K; b++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::printTrackingData()[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:431:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ToolData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  431 |             for (int i = 0; [01;35m[Ki < toolData.size()[m[K; i++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::initializeAndEnableTools(std::vector<ToolData>&)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:448:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<PortHandleInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  448 |         for (int i = 0; [01;35m[Ki < portHandles.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:456:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<PortHandleInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  456 |         for (int i = 0; [01;35m[Ki < portHandles.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:462:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<PortHandleInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  462 |         for (int i = 0; [01;35m[Ki < portHandles.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K In member function ‘[01m[Kvoid Aurora::configureActiveTools(std::string)[m[K’:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:502:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<PortHandleInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  502 |         for (int i = 0; [01;35m[Ki < portHandles.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:[m[K At global scope:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:43:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KuseUDP[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   43 | static bool [01;35m[KuseUDP[m[K = false;
+      |             [01;35m[K^~~~~~[m[K
+In file included from [01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/src/aurora_ndi_pkg/src/aurora_node.cpp:33[m[K:
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/aurora_api/library/include/CombinedApi.h:426:20:[m[K [01;35m[Kwarning: [m[K‘[01m[KerrorStrings[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  426 | static const char* [01;35m[KerrorStrings[m[K[] =
+      |                    [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/a-tamby/experiment_grinding_nose/sensors_experiment/aurora_api/library/include/CombinedApi.h:415:20:[m[K [01;35m[Kwarning: [m[K‘[01m[KwarningStrings[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  415 | static const char* [01;35m[KwarningStrings[m[K[] =
+      |                    [01;35m[K^~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable aurora_talker[0m
+[100%] Built target aurora_talker
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/environment/library_path.sh
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/environment/library_path.dsv
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/lib/aurora_ndi_pkg/aurora_talker
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/sroms/8700338.rom
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/sroms/8700339.rom
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/sroms/8700340.rom
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/sroms/DDRO-1000-2367-01_GENERIC_5D.rom
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/sroms/active-wireless.rom
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/ament_index/resource_index/package_run_dependencies/aurora_ndi_pkg
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/ament_index/resource_index/parent_prefix_path/aurora_ndi_pkg
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/environment/ament_prefix_path.sh
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/environment/ament_prefix_path.dsv
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/environment/path.sh
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/environment/path.dsv
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/local_setup.bash
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/local_setup.sh
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/local_setup.zsh
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/local_setup.dsv
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/package.dsv
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/ament_index/resource_index/packages/aurora_ndi_pkg
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/cmake/aurora_ndi_pkgConfig.cmake
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/cmake/aurora_ndi_pkgConfig-version.cmake
+-- Symlinking: /home/a-tamby/experiment_grinding_nose/sensors_experiment/install/aurora_ndi_pkg/share/aurora_ndi_pkg/package.xml

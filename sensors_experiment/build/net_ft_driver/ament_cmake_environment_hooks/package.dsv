@@ -1,0 +1,4 @@
+source;share/net_ft_driver/local_setup.bash
+source;share/net_ft_driver/local_setup.dsv
+source;share/net_ft_driver/local_setup.sh
+source;share/net_ft_driver/local_setup.zsh

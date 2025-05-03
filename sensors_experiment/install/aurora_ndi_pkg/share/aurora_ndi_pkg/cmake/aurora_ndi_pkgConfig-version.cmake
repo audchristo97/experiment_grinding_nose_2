@@ -1,0 +1,1 @@
+/home/a-tamby/experiment_grinding_nose/sensors_experiment/build/aurora_ndi_pkg/ament_cmake_core/aurora_ndi_pkgConfig-version.cmake

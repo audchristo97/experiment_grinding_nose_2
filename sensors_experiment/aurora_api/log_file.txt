@@ -1,0 +1,222 @@
+a-tamby@atamby-AORUS-15-XE4:~/CombinedAPIsample$ ./bin/linux/capisample /dev/ttyUSB0 --tools=sroms/DDRO-1000-2367-01_GENERIC_5D.rom
+Connecting to /dev/ttyUSB0 ...
+Setting baud rate using cfsetspeed(), baud: 9600, enum:13
+<<RESET
+API Revision: CombinedApi::sendCommand
+Sending command: APIREV  ...
+<<D.002.005
+D.002.005
+Setting Baud921600 for compatibility. Check your API guide to see if this is optimal for your NDI device.
+CombinedApi::sendCommand
+Sending command: COMM 60001 ...
+<<OKAY
+Setting baud rate using cfsetspeed(), baud: 921600, enum:4103
+Connected!
+CombinedApi::sendCommand
+Sending command: GET Features.Firmware.Version ...
+<<Features.Firmware.Version=008.500
+Features.Firmware.Version=008.500
+CombinedApi::sendCommand
+Sending command: APIREV  ...
+<<D.002.005
+CombinedApi::sendCommand
+Sending command: INIT  ...
+<<OKAY
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<ERROR0C
+ERROR0C
+CombinedApi::sendCommand
+Sending command: GET Param.User.String0 ...
+<<ERROR34
+ERROR34
+CombinedApi::sendCommand
+Sending command: SET Param.User.String0=customString ...
+<<ERROR34
+capi.setUserParameter(Param.User.String0, customString) failed: Parameter does not exist.
+CombinedApi::sendCommand
+Sending command: GET Param.User.String0 ...
+<<ERROR34
+ERROR34
+CombinedApi::sendCommand
+Sending command: SET Param.User.String0= ...
+<<ERROR34
+capi.setUserParameter(Param.User.String0, emptyString) failed: Parameter does not exist.
+Loading Tool Definitions (.rom files) ...
+Loading: sroms/DDRO-1000-2367-01_GENERIC_5D.rom
+CombinedApi::sendCommand
+Sending command: PHRQ *********100** ...
+<<ERROR01
+capi.portHandleRequest() failed: Invalid command.
+Invalid port handle: -1
+
+Initializing and enabling tools...
+CombinedApi::sendCommand
+Sending command: PHSR 02 ...
+<<010A001
+CombinedApi::sendCommand
+Sending command: PINIT 0A ...
+<<OKAY
+CombinedApi::sendCommand
+Sending command: PENA 0AD ...
+<<OKAY
+CombinedApi::sendCommand
+Sending command: PHSR 04 ...
+<<010A03F
+portHandle[0A].status=ToolInPort|Switch1Closed|Switch2Closed|Switch3Closed|PortInitialized|PortEnabled
+CombinedApi::sendCommand
+Sending command: PHINF 0A ...
+<<02000000NDI-MF2     0003A4444003F
+
+Entering tracking mode...
+CombinedApi::sendCommand
+Sending command: TSTART  ...
+<<OKAY
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0000003F00000000
+0000
+010AMISSING0000003F00000000
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+6,Port:10,0,Missing,,,,,,,,,0
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0000003F0000000E
+0000
+010AMISSING0000003F0000000E
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+22,Port:10,0,Missing,,,,,,,,,0
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0000003F0000001E
+0000
+010AMISSING0000003F0000001E
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+38,Port:10,0,Missing,,,,,,,,,0
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0000003F0000002E
+0000
+010AMISSING0000003F0000002E
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+54,Port:10,0,Missing,,,,,,,,,0
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0000003F0000003E
+0000
+010AMISSING0000003F0000003E
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+70,Port:10,0,Missing,,,,,,,,,0
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0002003F0000004E
+0000
+010AMISSING0002003F0000004E
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+86,Port:10,0,Missing,,,,,,,,,0
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0002003F0000005E
+0000
+010AMISSING0002003F0000005E
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+102,Port:10,0,Missing,,,,,,,,,0
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0002003F0000006E
+0000
+010AMISSING0002003F0000006E
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+118,Port:10,0,Missing,,,,,,,,,0
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0002003F0000007E
+0000
+010AMISSING0002003F0000007E
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+134,Port:10,0,Missing,,,,,,,,,0
+CombinedApi::sendCommand
+Sending command: TX 0801 ...
+<<010AMISSING0002003F0000008E
+0000
+010AMISSING0002003F0000008E
+0000
+CombinedApi::sendCommand
+[alerts] [buttons] Frame#,ToolHandle,Face#,TransformStatus,Q0,Qx,Qy,Qz,Tx,Ty,Tz,Error,#Markers,State,Tx,Ty,Tz
+150,Port:10,0,Missing,,,,,,,,,0
+
+Writing CSV file...
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+CombinedApi::sendCommand
+
+Leaving tracking mode and returning to configuration mode...
+CombinedApi::sendCommand
+Sending command: TSTOP  ...
+<<OKAY
+CAPI demonstration complete. Press any key to exit.
